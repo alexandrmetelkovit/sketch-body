@@ -1,0 +1,70 @@
+/* эксперимент */
+@import url("navbar.css");
+@import url("about-us.css");
+@import url("title.css");
+@import url("btn.css");
+@import url("gallery.css");
+@import url("services.css");
+@import url("order.css");
+@import url("select.css");
+@import url("modal.css");
+@import url("contacts.css");
+@import url("footer.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kalam", cursive;
+
+  margin: 0 auto;
+  max-width: 100%;
+  font-weight: 400;
+  background-color: #b1aa9a;
+}
+
+/* помещаем содержимое бади в блок для того, чтобы бургер скрылся справа */
+.body-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container_black {
+  margin: 0 auto;
+  min-width: 1800px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    min-width: 400px;
+  }
+
+  .container {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}

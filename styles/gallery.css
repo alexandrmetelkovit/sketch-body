@@ -1,0 +1,145 @@
+.gallery {
+  position: relative;
+}
+
+.gallery__title-wrapper {
+  position: absolute;
+  margin-top: 60px;
+  z-index: 1;
+}
+
+.gallery__title {
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gallery__slides {
+  position: relative;
+  height: 100vh;
+}
+
+.gallery__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-70%); /* Начальное положение слайда справа */
+  transition: opacity 0.4s ease, transform 0.8s ease; /* Плавный переход для opacity и transform */
+}
+
+.gallery__slide_active {
+  opacity: 1;
+  transform: translateX(0); /* Конечное положение слайда по центру */
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery__desc-text {
+  position: absolute;
+  bottom: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.gallery__controls-wrapper {
+  position: absolute;
+  bottom: 388px;
+  width: 100%;
+}
+
+.gallery__controls {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 50px; */
+}
+
+.gallery__control-prev,
+.gallery__control-next {
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.gallery__control-next:hover,
+.gallery__control-prev:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+  .gallery {
+    margin-bottom: 70px;
+  }
+
+  .gallery__title-wrapper {
+    margin-top: 80px;
+  }
+
+  .gallery__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery__slides {
+    height: 536px;
+  }
+
+  .gallery__slide_active {
+    opacity: 1;
+  }
+
+  .gallery__desc-text {
+    bottom: 80px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .gallery__controls-wrapper {
+    bottom: 217px;
+    padding: 0 20px;
+  }
+
+  .gallery__control-prev,
+  .gallery__control-next {
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    margin-bottom: 50px;
+  }
+
+  .gallery__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .gallery__slides {
+    height: 408px;
+  }
+
+  .gallery__desc-text {
+    bottom: 60px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .gallery__controls-wrapper {
+    bottom: 180px;
+    padding: 0;
+  }
+}

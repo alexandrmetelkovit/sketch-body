@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch body - студия аппаратного массажа</title>
+
+    <link rel="icon" type="image/png" href="./resources/favicon/favUp.png" />
+
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navbar">
+          <a class="logo" href="#">
+            <img
+              class="logo__img"
+              src="./resources/favicon/favNew.png"
+              alt="логотип студии"
+            />
+          </a>
+          <ul id="navMenu" class="nav__menu">
+            <li class="nav__item">
+              <a class="nav__link" href="#about-us"> О нас </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Услуги </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты </a>
+            </li>
+          </ul>
+          <div id="hamburger" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- секция слайдера -->
+      <section class="gallery">
+        <div class="gallery__slides">
+          <div class="gallery__slide gallery__slide_active">
+            <img
+              class="gallery__img"
+              src="./resources/gallery/interior-lobby-min.jpeg"
+              alt="Фото с логотипом студии"
+            />
+          </div>
+          <div class="gallery__slide">
+            <img
+              class="gallery__img"
+              src="./resources/gallery/interior-enter-min.jpeg"
+              alt="Фото фойе студии"
+            />
+          </div>
+          <div class="gallery__slide">
+            <img
+              class="gallery__img"
+              src="./resources/gallery/interior-device-min.jpeg"
+              alt="Фото интерьера(зеркало)"
+            />
+          </div>
+          <div class="gallery__slide">
+            <img
+              class="gallery__img"
+              src="./resources/gallery/interior-toilet-min.jpeg"
+              alt="Фото интерьера(раковина)"
+            />
+          </div>
+          <div class="gallery__controls-wrapper">
+            <div class="gallery__controls">
+              <button class="gallery__control-prev"></button>
+              <button class="gallery__control-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- секция о нас -->
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <div class="about-us__inner">
+            <h2 class="title">О НАС</h2>
+            <p>
+              Добро пожаловать на сайт первой студии аппаратного массажа в
+              Ярославле. Мы рады предложить вам уникальные процедуры, которые
+              помогут восстановить здоровье, улучшить общее самочувствие и
+              вернуть гармонию в вашу жизнь.
+            </p>
+            <a href="#services" class="view__services">Посмотреть услуги</a>
+          </div>
+        </div>
+        <section class="about-us__inner_color">
+          <h3 class="img__text_title">Почему выбирают нас?</h3>
+          <div class="img__text_inner">
+            <div class="row1">
+              <div class="col-left_img1">
+                <img
+                  class="img-studio1"
+                  src="./resources/gallery/interior-device2-min.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-right_text1">
+                <div class="img__text1">
+                  <p class="img__text_desc1">
+                    Наша студия использует передовые технологии и
+                    высококачественное оборудование, что позволяет нам
+                    предоставлять эффективные и безопасные услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="col-left_img2">
+                <img
+                  class="img-studio2"
+                  src="./resources/gallery/about2.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-right_text2">
+                <div class="img__text2">
+                  <p class="img__text_desc2">
+                    Мы предлагаем широкий спектр процедур, направленных на
+                    снятие мышечного напряжения, коррекцию фигуры и улучшение
+                    состояния кожи.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row3">
+              <div class="col-left_img3">
+                <img
+                  class="img-studio3"
+                  src="./resources/gallery/interior-wz.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-right_text3">
+                <div class="img__text3">
+                  <p class="img__text_desc3">
+                    Каждый клиент для нас уникален, и мы разрабатываем
+                    персонализированные программы массажа, учитывая ваши
+                    потребности и цели.
+                    <span class="img__text_desc3_hidden">
+                      Наша команда профессионалов готова помочь вам на пути к
+                      здоровью и красоте.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- секция услуг студии -->
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title title" id="services">УСЛУГИ</h2>
+          <h3 class="services__subtitle">
+            <span class="span-subtitle"> Аппаратный массаж </span> - это
+            механическое воздействие, направленное на физическое разминание
+            жировой прослойки, одной из целей которого уменьшение объёма тела,
+            улучшение качества кожи, её тонуса.
+          </h3>
+
+          <!-- аппараты LovePG-->
+          <ul class="services__list">
+            <li class="service__item">
+              <div class="service__image">
+                <img
+                  class="img"
+                  src="resources/gallery/pulse-photo.jpg"
+                  alt="фото аппарата Pulse"
+                />
+                <p class="service__price">2500₽ - 40 мин</p>
+                <h3>LovePG PULSE</h3>
+                <div class="service__video">
+                  <video class="video" autoplay loop muted>
+                    <source
+                      src="resources/gallery/pulse-video.mov"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </li>
+            <li class="service__item">
+              <div class="service__image">
+                <img
+                  class="img"
+                  src="resources/gallery/sketch-photo.jpg"
+                  alt="фото аппарата Sketch"
+                />
+                <p class="service__price">2500₽ - 40 мин</p>
+                <h3>LovePG SKETCH</h3>
+                <div class="service__video">
+                  <video class="video" autoplay loop muted>
+                    <source
+                      src="resources/gallery/sketch-video.mov"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- преимущества LovePG -->
+          <div class="device-performance">
+            <h3>
+              Процедура массажа на обоих аппаратах несет общую цель омоложения и
+              оздоровления тела, и позволяет достигнуть следующих результатов:
+            </h3>
+            <p>✨ уменьшить симптомы целлюлита</p>
+            <p>✨ сделать кожу более эластичной</p>
+            <p>✨ остановить фигуру после родов</p>
+            <p>✨ скорректировать контуры тела</p>
+            <p>✨ избавиться от растяжек и отеков</p>
+            <p>✨ избавиться от лишнего объёма и веса</p>
+            <p>✨ предупредить возникновение варикоза</p>
+            <p>✨ снять напряжение после физических нагрузок</p>
+            <p>✨ убрать за несколько сеансов ненавистные галифе</p>
+            <p>✨ улучшить обменные процессы и циркуляцию крови</p>
+          </div>
+
+          <!-- акции -->
+          <div class="action-text">
+            <h3 class="title-action">
+              *Специальное предложение для новых клиентов!
+            </h3>
+            <p class="desc-action">
+              Мы рады приветствовать вас в нашей студии а и предлагаем
+              эксклюзивную акцию для первого посещения: <span> 1500₽ </span>
+            </p>
+          </div>
+
+          <!-- открытие попапа -->
+          <!-- <button
+            id="openModalBtn"
+            class="full-width-btn full-width-btn_inverted"
+          >
+            Записаться 
+          </button> -->
+          <div class="full-width-btn full-width-btn_inverted">
+            <a class="wa-link" target="_blank" href="https://wa.me/79201494777"
+              >Записаться</a
+            >
+          </div>
+
+          <!-- попап с заказом услуги -->
+          <!-- <div id="modal" class="modal">
+            <div id="modalBox" class="modal__box">
+              <button id="closeModalBtn" class="modal__close-btn">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #000;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      }
+                    </style>
+                  </defs>
+                  <title />
+                  <g id="cross">
+                    <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                    <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                  </g>
+                </svg>
+              </button>
+              <div class="order__text">
+                <h3 class="order__title">Пожалуйста, заполните форму</h3>
+                <p class="order__subtitle">мы свяжемся с вами</p>
+              </div>
+
+              <form
+                action="#"
+                id="form"
+                class="form"
+                name="form"
+                autocomplete="off"
+              >
+                <div class="input__name-wrapper">
+                  <label for="inputName">Имя</label>
+                  <input
+                    id="inputName"
+                    type="text"
+                    name="name"
+                    placeholder="Введите имя"
+                    class="order__input-name"
+                  />
+                  <span id="name_error" class="error-message-name"></span>
+                </div>
+
+                <div class="input__tel-wrapper">
+                  <label for="inputTel">Номер телефона</label>
+                  <input
+                    id="inputTel"
+                    type="tel"
+                    name="phone"
+                    placeholder="Введите номер телефона"
+                    class="order__input-tel"
+                  />
+                  <span id="tel_error" class="error-message-tel"></span>
+                </div>
+                <div class="select-wrapper">
+                  <select
+                    id="categorySelect"
+                    class="categorySelect"
+                    name="category"
+                  >
+                    <option hidden selected disabled value="Аппарат">
+                      Выберите аппарат
+                    </option>
+                    <option value="SKETCH">LovePG SKETCH</option>
+                    <option value="PULSE">LovePG PULSE</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  id="formBtn"
+                  class="full-width-btn full-width-btn_small"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- контакты -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title title">Контакты</h2>
+          <ul class="contacts__inner">
+            <li class="contacts__tel">
+              <a
+                class="contacts__telephone"
+                href="tel:+79201494777"
+                target="_blank"
+                >+7 (920) 149-47-77
+              </a>
+            </li>
+            <li class="contacts__vk">
+              <a
+                class="contacts__vkontakte"
+                target="_blank"
+                href="https://vk.com/club226302325"
+                >Sketch body</a
+              >
+            </li>
+            <li class="contacts__inst">
+              <a
+                class="contacts__instagram"
+                target="_blank"
+                href="https://www.instagram.com/sketch_body_yaroslavl?igsh=Yms4ZXA3dnJqdDJm&utm_source=qr"
+                >sketch_body_yaroslavl</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="hours">
+        <div class="container">
+          <h2 class="hours__title title">Режим работы</h2>
+          <ul class="hours-address__inner">
+            <li class="studio-hours">
+              <p>Без выходных</p>
+              <p>С 9:00 - 21:00</p>
+            </li>
+            <li class="address">
+              <p class="address__title">Адрес:</p>
+              <a
+                class="address__desc"
+                href="https://yandex.ru/maps/-/CDc7nG-l"
+                target="_blank"
+              >
+                <p>г. Ярославль, ул.Республиканская, д.61А</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- подвал -->
+    <footer>
+      <div class="container">
+        <ul class="nav__menu-footer">
+          <li class="nav__item nav__item-footer">
+            <a class="nav__link nav__link-footer" href="#about-us"> О нас </a>
+          </li>
+          <li class="nav__item nav__item-footer">
+            <a class="nav__link nav__link-footer" href="#services">Услуги </a>
+          </li>
+          <li class="nav__item nav__item-footer">
+            <a class="nav__link nav__link-footer" href="#contacts">Контакты </a>
+          </li>
+        </ul>
+        <p class="footer__text">
+          Студия аппаратного массажа Sketch body - 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/gallery.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+    <!-- <script src="js/formWhatsApp.js"></script> -->
+
+    <!-- <script src="js/tg.js"></script> -->
+  </body>
+</html>

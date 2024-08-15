@@ -1,0 +1,91 @@
+.order__text {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.order__title {
+  font-size: 25px;
+  line-height: 2.3;
+  text-align: center;
+}
+
+.order__subtitle {
+  font-size: 25px;
+}
+
+.input__tel-wrapper,
+.input__name-wrapper {
+  padding-bottom: 20px;
+}
+
+.input__tel-wrapper {
+  padding-bottom: 25px;
+}
+
+label {
+  position: relative;
+  display: block;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgb(207, 205, 202);
+  border: 0.1px solid #b1aa9a;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  padding: 5px 0 5px 10px;
+}
+
+.order__input-name:focus,
+.order__input-tel:focus {
+  outline: none;
+}
+
+input:focus {
+  background-color: rgb(233, 233, 228);
+}
+
+/* Красная рамка при ошибке */
+.field-error {
+  border: 2px solid rgb(191, 81, 81);
+}
+
+.error-message {
+  padding-left: 10px;
+  /* Красный цвет для сообщения об ошибке */
+  color: rgb(187, 62, 62);
+  /* Размер шрифта для сообщения */
+  font-size: 15px;
+}
+
+/* 
+.field-error-name,
+.field-error-tel {
+  border: 0.6px solid rgb(197, 50, 50);
+}
+
+.error-message-name,
+.error-message-tel {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+  color: rgb(197, 50, 50);
+  font-family: "Jost", sans-serif;
+} */
+
+@media (max-width: 767px) {
+  .order__title {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .order__subtitle {
+    font-size: 18px;
+    line-height: 2;
+  }
+}

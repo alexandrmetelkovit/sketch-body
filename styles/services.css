@@ -1,0 +1,272 @@
+.services__subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.span-subtitle {
+  color: #5f5333;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__item {
+  position: relative;
+  width: calc(50% - 5px);
+}
+
+.service__image {
+  position: relative;
+  transition: transform 1.2s;
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.service__image h3 {
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  margin: 0 0 0 10px;
+}
+
+.img {
+  box-shadow: 0px 0px 33px 19px rgba(208, 184, 127, 0.36);
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service__video {
+  position: absolute;
+  top: 60px;
+  z-index: -1;
+  width: 100%;
+  padding: 0 2px;
+}
+
+.video {
+  box-shadow: 0px 0px 33px 37px rgba(208, 184, 127, 0.51);
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service__item:hover .service__image {
+  /* Поворачиваем изображение на 180 градусов при наведении */
+  transform: rotateY(-180deg);
+  transition: transform 1.2s;
+  backface-visibility: hidden;
+}
+
+.service__item:hover .service__video {
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.service__price {
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  left: 30px;
+  top: 30px;
+  padding: 5px 22px;
+  font-size: 22px;
+  line-height: 1.2;
+  background-color: #ad1818;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.action-text {
+  text-align: justify;
+  color: #090111;
+  margin-bottom: 50px;
+}
+
+.title-action {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.desc-action {
+  font-size: 25px;
+}
+
+.desc-action span {
+  color: #e00707df;
+  font-size: 30px;
+}
+
+.device-performance {
+  margin-bottom: 40px;
+}
+
+.device-performance h3 {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.device-performance h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 26px;
+  right: 5px;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.device-performance h3::after {
+  background-image: url("../resources/gallery/servicesBefore.svg");
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.device-performance p {
+  font-size: 18px;
+  line-height: 2;
+
+  animation: pulse 12s infinite; /* Добавляем анимацию пульсации */
+  transition: transform 12s; /* Время эффекта */
+  text-align: left;
+}
+
+.device-performance:hover p {
+  transform: scale(1.2); /* Увеличиваем масштаб при наведении */
+}
+
+@media (max-width: 1199px) {
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .service__image h3 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .img,
+  .video {
+    box-shadow: 0px 0px 33px 34px rgba(208, 184, 127, 0.45);
+  }
+
+  .service__price {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .action-text {
+    margin-bottom: 40px;
+  }
+
+  .title-action,
+  .desc-action span {
+    font-size: 25px;
+  }
+
+  .desc-action {
+    font-size: 20px;
+  }
+
+  .device-performance h3 {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .device-performance h3::after {
+    top: 59px;
+    right: 150px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .device-performance p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services__subtitle,
+  .device-performance h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .device-performance p {
+    text-align: justify;
+  }
+
+  .services__title::after {
+    display: none;
+  }
+
+  .services {
+    margin-bottom: 50px;
+  }
+
+  .services__list {
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .service__item {
+    width: 100%;
+  }
+
+  .service__image h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .service__price {
+    padding: 6px 26px;
+    left: 24px;
+    top: 23px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .action-text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .title-action,
+  .desc-action span {
+    font-size: 25px;
+  }
+
+  .desc-action {
+    font-size: 20px;
+  }
+
+  .device-performance h3::after {
+    top: 74px;
+    right: 1px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 630px) {
+  .device-performance h3::after {
+    display: none;
+  }
+}
