@@ -51,15 +51,15 @@
 }
 
 .contacts__tel::before {
-  background-image: url("/resources/contacts-img/phone.svg");
+  background-image: url("./resources/contacts-img/phone.svg");
 }
 
 .contacts__vk::before {
-  background-image: url("/resources/contacts-img/vk.svg");
+  background-image: url("./resources/contacts-img/vk.svg");
 }
 
 .contacts__inst::before {
-  background-image: url("/resources/contacts-img/instagram.svg");
+  background-image: url("./resources/contacts-img/instagram.svg");
 }
 
 .hours-address__inner {
