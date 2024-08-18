@@ -60,7 +60,7 @@ button {
 
 @media (max-width: 767px) {
   body {
-    min-width: 400px;
+    min-width: 300px;
   }
 
   .container {
