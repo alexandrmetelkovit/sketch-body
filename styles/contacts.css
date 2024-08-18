@@ -89,7 +89,7 @@
 }
 
 .address__title::before {
-  background-image: url("/resources/contacts-img/address.svg");
+  background-image: url("../resources/contacts-img/address.svg");
 }
 
 .address__desc {
