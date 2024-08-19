@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Kalam", cursive;
+
 
   margin: 0 auto;
   max-width: 100%;
@@ -60,7 +60,7 @@ button {
 
 @media (max-width: 767px) {
   body {
-    min-width: 400px;
+    min-width: 350px;
   }
 
   .container {
@@ -68,4 +68,3 @@ button {
     padding-right: 13px;
   }
 }
-
