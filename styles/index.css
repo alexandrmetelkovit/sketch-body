@@ -5,9 +5,9 @@
 @import url("btn.css");
 @import url("gallery.css");
 @import url("services.css");
-@import url("order.css");
-@import url("select.css");
-@import url("modal.css");
+/* @import url("order.css"); */
+/* @import url("select.css"); */
+/* @import url("modal.css"); */
 @import url("contacts.css");
 @import url("footer.css");
 
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Kalam", cursive;
+
 
   margin: 0 auto;
   max-width: 100%;
@@ -60,7 +60,7 @@ button {
 
 @media (max-width: 767px) {
   body {
-    min-width: 400px;
+    min-width: 350px;
   }
 
   .container {
