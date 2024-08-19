@@ -1,6 +1,7 @@
 .services__subtitle {
   font-size: 20px;
   margin-bottom: 20px;
+  word-break: break-all;
 }
 
 .span-subtitle {
@@ -94,6 +95,7 @@
 
 .desc-action {
   font-size: 25px;
+  word-break: break-all;
 }
 
 .desc-action span {
@@ -109,6 +111,7 @@
   position: relative;
   font-size: 20px;
   line-height: 2;
+  word-break: break-all;
 }
 
 .device-performance h3::after {
@@ -146,10 +149,6 @@
   animation: pulse 12s infinite; /* Добавляем анимацию пульсации */
   transition: transform 12s; /* Время эффекта */
   text-align: left;
-}
-
-.device-performance:hover p {
-  transform: scale(1.2); /* Увеличиваем масштаб при наведении */
 }
 
 @media (max-width: 1199px) {
