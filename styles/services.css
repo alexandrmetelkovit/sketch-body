@@ -1,7 +1,7 @@
 .services__subtitle {
   font-size: 20px;
   margin-bottom: 20px;
-  word-break: break-all;
+  hyphens: auto;
 }
 
 .span-subtitle {
@@ -95,7 +95,7 @@
 
 .desc-action {
   font-size: 25px;
-  word-break: break-all;
+  hyphens: auto;
 }
 
 .desc-action span {
@@ -111,7 +111,7 @@
   position: relative;
   font-size: 20px;
   line-height: 2;
-  word-break: break-all;
+  hyphens: auto;
 }
 
 .device-performance h3::after {
