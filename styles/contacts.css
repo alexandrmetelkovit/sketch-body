@@ -69,8 +69,8 @@
 
 .studio-hours,
 .address {
-  font-family: "Kalam", cursive;
   font-size: 30px;
+  font-family: "Jost", sans-serif;
 }
 
 .address__title {
