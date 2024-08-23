@@ -58,7 +58,7 @@ button {
 
 @media (max-width: 767px) {
   body {
-    min-width: 350px;
+    min-width: 320px;
   }
 
   .container {
