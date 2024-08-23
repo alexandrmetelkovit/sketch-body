@@ -45,3 +45,10 @@ document.addEventListener("click", (e) => {
     closeBurgerLinks();
   }
 });
+
+document
+  .querySelector('a[href="#section"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector("#section").scrollIntoView({ behavior: "smooth" });
+  });
