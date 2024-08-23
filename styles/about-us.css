@@ -177,7 +177,7 @@ p span {
   }
 
   .view__services {
-    min-width: 320px;
+    min-width: 100px;
   }
 
   .about-us__inner_color {
