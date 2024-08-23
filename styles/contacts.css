@@ -7,8 +7,7 @@
 .hours__title {
   margin-bottom: 74px;
   font-size: 25px;
-  line-height: 25px;
-  color: #121212;
+  line-height: 1;
 }
 
 .hours__title {
@@ -17,22 +16,27 @@
 
 .contacts__telephone,
 .contacts__vkontakte,
-.contacts__instagram {
+.contacts__instagram,
+.studio-hours,
+.address {
   font-size: 30px;
   text-decoration: none;
-  color: #121212;
+  color: var(--color-d);
+  font-family: "Jost", sans-serif;
 }
 
 .contacts__tel,
 .contacts__vk,
-.contacts__inst {
+.contacts__inst,
+.address__title {
   position: relative;
   display: block;
 }
 
 .contacts__tel::before,
 .contacts__vk::before,
-.contacts__inst::before {
+.contacts__inst::before,
+.address__title::before {
   content: "";
   display: block;
   position: absolute;
@@ -41,6 +45,11 @@
   height: 35px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.contacts__vk::before {
+  width: 40px;
+  height: 40px;
 }
 
 .contacts__vkontakte:hover,
@@ -65,27 +74,6 @@
 .hours-address__inner {
   display: flex;
   justify-content: space-between;
-}
-
-.studio-hours,
-.address {
-  font-size: 30px;
-  font-family: "Jost", sans-serif;
-}
-
-.address__title {
-  position: relative;
-}
-
-.address__title::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -40px;
-  width: 35px;
-  height: 35px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .address__title::before {
@@ -137,40 +125,13 @@
   .contacts__title {
     margin-bottom: 58px;
     line-height: 2.5;
-    color: #121212;
+    color: var(--color-d);
   }
 
-  .contacts__telephone {
-    font-size: 35px;
-    line-height: 46px;
-  }
-
-  .contacts__tel:before {
-    width: 31px;
-    top: -40px;
-  }
-
-  .contacts__vk {
-    font-size: 35px;
-    line-height: 46px;
-    opacity: 1;
-    border: none;
-  }
-
-  .contacts__vk:before {
-    width: 40px;
-    top: -40px;
-  }
-
+  .contacts__telephone,
+  .contacts__vk,
   .contacts__inst {
     font-size: 35px;
-    line-height: 46px;
-    opacity: 1;
-    border: none;
-  }
-
-  .contacts__inst:before {
-    width: 30px;
-    top: -33px;
+    line-height: var(--line-h-1-7);
   }
 }

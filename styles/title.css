@@ -1,7 +1,7 @@
 .title {
   font-size: 25px;
   line-height: 2.5;
-  color: #121212;
+  color: var((--color-d));
   text-transform: uppercase;
 }
 

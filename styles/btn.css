@@ -6,10 +6,9 @@
   font-weight: 400;
   border-radius: 5px;
   border: none;
-  color: #ffffff;
+  color: var(--color-l);
   text-align: center;
   transition: 0.4s;
-  cursor: pointer;
   background-color: #2122258e;
   transition: all 1.4s ease;
 }
@@ -23,11 +22,11 @@
 
 .wa-link {
   display: block;
-  color: #ffffff;
+  color: var(--color-l);
 }
 
 .wa-link:hover {
-  color: #000000;
+  color: var(--color-d);
 }
 
 .full-width-btn_inverted:hover {
@@ -45,7 +44,7 @@
   opacity: 0.7;
   transition: 0.5s;
   background-color: #999597;
-  color: #000000;
+  color: var(--color-d);
 }
 
 .full-width-btn:focus-visible,

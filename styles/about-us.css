@@ -5,7 +5,7 @@
 .about-us__inner p {
   margin-bottom: 29px;
   font-size: 25px;
-  line-height: 1.7;
+  line-height: var(--line-h-1-7);
 }
 
 p span {
@@ -21,7 +21,7 @@ p span {
   line-height: 1.5;
   border-radius: 5px;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-l);
   background-color: #2122258e;
   transition: 0.5s;
 }
@@ -29,7 +29,7 @@ p span {
 .view__services:hover {
   opacity: 0.7;
   background-color: #999597;
-  color: #000000;
+  color: var(--color-d);
 }
 
 /* плюсы студии */
@@ -43,7 +43,7 @@ p span {
 .about-us__inner_color {
   margin: 0 30px;
   background-color: #121010;
-  color: #ffffff;
+  color: var(--color-l);
   border-radius: 10px;
   padding: 20px 0 60px 0;
 }
@@ -51,7 +51,7 @@ p span {
 .img__text_title {
   text-align: center;
   font-size: 50px;
-  line-height: 1.7;
+  line-height: var(--line-h-1-7);
   text-transform: uppercase;
   color: #b0a9bf;
 }
@@ -100,7 +100,7 @@ p span {
 }
 
 .img__text_desc3 > .img__text_desc3_hidden {
-  color: white;
+  color: var(--color-l);
   text-transform: unset;
 }
 
@@ -166,14 +166,14 @@ p span {
   .img__text_title {
     width: 100%;
     font-size: 22px;
-    line-height: 30px;
+    line-height: var(--line-h-1-7);
   }
 
   .view__more {
     width: 100%;
     padding: 14.5px 27px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: var(--line-h-1-7);
   }
 
   .view__services {
@@ -188,6 +188,7 @@ p span {
   .img__text_title {
     font-size: 20px;
     line-height: 1.7;
+    line-height: var(--line-h-1-7);
   }
 
   .row1,

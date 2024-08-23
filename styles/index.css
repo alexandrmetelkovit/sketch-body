@@ -5,21 +5,28 @@
 @import url("btn.css");
 @import url("gallery.css");
 @import url("services.css");
-/* @import url("order.css"); */
-/* @import url("select.css"); */
-/* @import url("modal.css"); */
 @import url("contacts.css");
 @import url("footer.css");
+
+:root {
+  --line-h-1-7: 1.7;
+  --opacity-0: 0;
+  --color-l: #ffffff;
+  --color-d: #000000;
+  --bgcolor: #b1aa9a;
+
+  --margin-0: 0 auto;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0 auto;
+  margin: var(--margin-0);
   max-width: 100%;
   font-weight: 400;
-  background-color: #b1aa9a;
+  background-color: var(--bgcolor);
 }
 
 /* помещаем содержимое бади в блок для того, чтобы бургер скрылся справа */
@@ -31,31 +38,29 @@ body {
 
 .container {
   width: 1000px;
-  margin: 0 auto;
+  margin: var(--margin-0);
 }
 
 .container_black {
-  margin: 0 auto;
+  margin: var(--margin-0);
   min-width: 1800px;
 }
 
 section {
   margin-bottom: 70px;
-  opacity: 0;
+  opacity: var(--opacity-0);
   transform: translateY(50px);
   transition: transform 0.5s, opacity 0.5s;
 }
 
 button {
   font-family: inherit;
-  cursor: pointer;
 }
 
 @media (max-width: 1199px) {
   .container {
     width: 100%;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 0 17px;
   }
 }
 
@@ -65,7 +70,6 @@ button {
   }
 
   .container {
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 0 13px;
   }
 }

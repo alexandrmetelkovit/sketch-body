@@ -15,12 +15,12 @@ footer {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-l);
   opacity: 0.5;
 }
 
 .nav__link-footer {
-  color: #ffffff;
+  color: var(--color-l);
   opacity: 0.8;
 }
 
@@ -36,20 +36,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-  /* footer {
-    padding: 30px 0 26px 0;
-  }
-
-  .menu__theme-brown {
-    gap: 30px;
-    margin-bottom: 41px;
-  }
-
-  .menu__link-white {
-    font-size: 12px;
-    line-height: 16px;
-  } */
-
   .nav__menu-footer {
     display: flex;
     gap: 35px;
