@@ -6,9 +6,6 @@
   margin-bottom: 29px;
   font-size: 25px;
   line-height: 1.7;
-  color: #121212;
-  /* text-wrap: wrap; */
-  hyphens: auto;
 }
 
 p span {
@@ -100,7 +97,6 @@ p span {
   font-size: 30px;
   line-height: 2;
   min-width: 250px;
-  hyphens: auto;
 }
 
 .img__text_desc3 > .img__text_desc3_hidden {
