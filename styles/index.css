@@ -41,6 +41,9 @@ body {
 
 section {
   margin-bottom: 70px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 button {

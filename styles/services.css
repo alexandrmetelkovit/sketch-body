@@ -32,9 +32,12 @@
   margin: 0 0 0 10px;
 }
 
+.img {
+  box-shadow: 0px 0px 33px 19px rgba(208, 184, 127, 0.36);
+}
+
 .img,
 .video {
-  box-shadow: 0px 0px 33px 19px rgba(208, 184, 127, 0.36);
   border-radius: 7px;
   width: 100%;
   height: 100%;
@@ -43,10 +46,11 @@
 
 .service__video {
   position: absolute;
-  top: 60px;
+  top: 76px;
   z-index: -1;
   width: 100%;
   padding: 0 2px;
+  transition: 0.2s;
 }
 
 .service__item:hover .service__image {
@@ -54,7 +58,7 @@
   /* transform: rotateY(-180deg);
   transition: transform 1.2s;
   backface-visibility: hidden; */
-	z-index: -1;
+  z-index: -1;
 }
 
 .service__item:hover .service__video {
