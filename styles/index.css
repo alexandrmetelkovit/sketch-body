@@ -48,7 +48,13 @@ body {
 
 section {
   margin-bottom: 70px;
-  opacity: var(--opacity-0);
+  /* opacity: var(--opacity-0);
+  transform: translateY(50px);
+  transition: transform 0.5s, opacity 0.5s; */
+}
+
+div {
+	 opacity: var(--opacity-0);
   transform: translateY(50px);
   transition: transform 0.5s, opacity 0.5s;
 }

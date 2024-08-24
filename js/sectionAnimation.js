@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let sections = document.querySelectorAll("section");
+  let divS = document.querySelectorAll("div");
 
   function checkBlocksVisibility() {
     let windowHeight = window.innerHeight;
 
-    sections.forEach((section) => {
-      let sectionPosition = section.getBoundingClientRect().top;
+    divS.forEach((div) => {
+      let divPos = div.getBoundingClientRect().top;
 
-      if (sectionPosition < windowHeight - 100) {
-        section.style.opacity = "1";
+      if (divPos < windowHeight - 100) {
+        div.style.opacity = "1";
 
-        section.style.transform = "translateY(0)";
+        div.style.transform = "translateY(0)";
       } else {
-        section.style.opacity = "0";
+        div.style.opacity = "0";
 
-        section.style.transform = "translateY(50px)";
+        div.style.transform = "translateY(50px)";
       }
     });
   }
