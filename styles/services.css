@@ -43,7 +43,7 @@
   z-index: -1;
   width: 100%;
   padding: 0 7px;
-  transition: 0.7s;
+  transition: 0.2s;
 }
 
 .service__item:hover .service__image {
