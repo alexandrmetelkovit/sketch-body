@@ -23,6 +23,8 @@ p span {
   text-align: center;
   color: var(--color-l);
   background-color: #2122258e;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -34,7 +36,12 @@ p span {
 
 /* плюсы студии */
 .img__text_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 30px;
   margin: 30px 40px;
@@ -59,12 +66,19 @@ p span {
 .row1,
 .row2,
 .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 80px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .row2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -86,7 +100,12 @@ p span {
 .img__text1,
 .img__text2,
 .img__text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -194,6 +213,9 @@ p span {
   .row1,
   .row2,
   .row3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
   }

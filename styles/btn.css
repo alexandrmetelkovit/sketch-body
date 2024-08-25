@@ -8,8 +8,12 @@
   border: none;
   color: var(--color-l);
   text-align: center;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   background-color: #2122258e;
+  -webkit-transition: all 1.4s ease;
+  -o-transition: all 1.4s ease;
   transition: all 1.4s ease;
 }
 
@@ -30,7 +34,10 @@
 }
 
 .full-width-btn_inverted:hover {
+  -webkit-transform: scaleY(1.1);
+  -ms-transform: scaleY(1.1);
   transform: scaleY(1.1);
+  -webkit-box-shadow: 0px 4px 32px 27px rgba(195, 176, 103, 0.21);
   box-shadow: 0px 4px 32px 27px rgba(195, 176, 103, 0.21);
 }
 
@@ -42,6 +49,8 @@
 .full-width-btn:hover,
 .full-width-btn_small:hover {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   background-color: #999597;
   color: var(--color-d);

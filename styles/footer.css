@@ -4,8 +4,14 @@ footer {
 }
 
 .nav__menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 50px;
   margin-bottom: 40px;
@@ -30,6 +36,8 @@ footer {
 
 @media (max-width: 1199px) {
   .nav__menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 55px;
   }
@@ -37,6 +45,8 @@ footer {
 
 @media (max-width: 767px) {
   .nav__menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 35px;
     margin-bottom: 25px;

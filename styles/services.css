@@ -8,8 +8,13 @@
 }
 
 .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -26,6 +31,7 @@
 }
 
 .img {
+  -webkit-box-shadow: 0px 0px 49px 34px rgba(208, 184, 127, 0.45);
   box-shadow: 0px 0px 49px 34px rgba(208, 184, 127, 0.45);
 }
 
@@ -34,6 +40,7 @@
   border-radius: 7px;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -43,6 +50,8 @@
   z-index: -1;
   width: 100%;
   padding: 0 7px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -113,14 +122,32 @@
   background-image: url("../resources/gallery/servicesBefore.svg");
 }
 
-@keyframes pulse {
+@-webkit-keyframes pulse {
   0% {
+    -webkit-transform: 12s;
     transform: scale(0.7);
   }
   50% {
+    -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
   100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: 12s;
+    transform: scale(0.7);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -128,9 +155,14 @@
 .device-performance p {
   font-size: 18px;
   line-height: 2;
-
+  -webkit-animation: pulse 12s infinite;
   animation: pulse 12s infinite; /* Добавляем анимацию пульсации */
-  transition: transform 12s; /* Время эффекта */
+  -webkit-transition: transform 12s;
+  -webkit-transition: -webkit-transform 12s;
+  transition: -webkit-transform 12s;
+  -o-transition: transform 12s;
+  transition: transform 12s;
+  transition: transform 12s, -webkit-transform 12s; /* Время эффекта */
   text-align: left;
 }
 
@@ -146,6 +178,7 @@
 
   .img,
   .video {
+    -webkit-box-shadow: 0px 0px 33px 34px rgba(208, 184, 127, 0.45);
     box-shadow: 0px 0px 33px 34px rgba(208, 184, 127, 0.45);
   }
 
