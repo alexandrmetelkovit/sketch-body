@@ -1,8 +1,9 @@
-.contacts__inner {
+.contacts__inner,
+.hours-address__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .contacts__title,
@@ -25,6 +26,17 @@
   text-decoration: none;
   color: var(--color-d);
   font-family: "Jost", sans-serif;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.address__desc {
+  text-decoration: none;
+  color: rgb(115, 104, 71);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contacts__tel,
@@ -55,12 +67,10 @@
 }
 
 .contacts__vkontakte:hover,
-.contacts__instagram:hover {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+.contacts__instagram:hover,
+.address__desc:hover {
   border-bottom: 0.2px solid #121212;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .contacts__tel::before {
@@ -75,44 +85,20 @@
   background-image: url("../resources/contacts-img/instagram.svg");
 }
 
-.hours-address__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .address__title::before {
   background-image: url("../resources/contacts-img/address.svg");
 }
 
-.address__desc {
-  text-decoration: none;
-  color: rgb(115, 104, 71);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.address__desc:hover {
-  opacity: 0.7;
-}
-
 @media (max-width: 1199px) {
-  .contacts__inner,
   .hours-address__inner {
-    gap: 120px;
-  }
-
-  .hours-address__inner {
-    gap: 50px;
+    gap: 70px;
   }
 
   .contacts__telephone,
   .contacts__vk,
-  .contacts__inst {
+  .contacts__inst,
+  .studio-hours,
+  .address {
     font-size: 27px;
   }
 }
@@ -140,11 +126,12 @@
     line-height: 2.5;
     color: var(--color-d);
   }
-
   .contacts__telephone,
   .contacts__vk,
-  .contacts__inst {
-    font-size: 35px;
+  .contacts__inst,
+  .studio-hours,
+  .address {
+    font-size: 30px;
     line-height: var(--line-h-1-7);
   }
 }

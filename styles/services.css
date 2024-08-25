@@ -171,6 +171,10 @@
     margin-bottom: 100px;
   }
 
+  .services__subtitle {
+    font-size: 23px;
+  }
+
   .service__image h3 {
     font-size: 25px;
     line-height: 1.5;
@@ -213,14 +217,14 @@
   }
 
   .device-performance p {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .services__subtitle,
   .device-performance h3 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
 
@@ -243,7 +247,7 @@
 
   .service__image h3 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .service__price {
@@ -264,7 +268,7 @@
   }
 
   .desc-action {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .device-performance h3::after {
