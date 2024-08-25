@@ -27,15 +27,6 @@ document.querySelectorAll(".nav__link").forEach((n) => {
   });
 });
 
-// Закрытие бургер-меню при нажатии клавиши Escape
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    hamburgerNode.classList.remove("active");
-    navMenuNode.classList.remove("active");
-    bodyNode.classList.remove("body_fixed");
-  }
-});
-
 document.addEventListener("click", (e) => {
   if (
     navMenuNode.classList.contains("active") &&
@@ -43,5 +34,14 @@ document.addEventListener("click", (e) => {
     !navMenuNode.contains(e.target)
   ) {
     closeBurgerLinks();
+  }
+});
+
+// Закрытие бургер-меню при нажатии клавиши Escape
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    hamburgerNode.classList.remove("active");
+    navMenuNode.classList.remove("active");
+    bodyNode.classList.remove("body_fixed");
   }
 });
