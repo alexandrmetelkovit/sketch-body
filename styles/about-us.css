@@ -14,8 +14,8 @@ p span {
 }
 
 .view__services {
-  display: inline-block;
-  width: 255px;
+  display: block;
+  width: 310px;
   padding: 20px 40px;
   font-size: 20px;
   line-height: 1.5;
@@ -49,7 +49,7 @@ p span {
 
 .about-us__inner_color {
   margin: 0 30px;
-  background-color: #121010;
+  background-color: #999597;
   color: var(--color-l);
   border-radius: 10px;
   padding: 20px 0 60px 0;
@@ -60,7 +60,7 @@ p span {
   font-size: 50px;
   line-height: var(--line-h-1-7);
   text-transform: uppercase;
-  color: #b0a9bf;
+  color: #1f201f;
 }
 
 .row1,
@@ -73,8 +73,13 @@ p span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 8px solid rgba(215, 211, 211, 0.45);
 }
 
+.row3 {
+  border-bottom: none;
+}
 .row2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -114,13 +119,9 @@ p span {
 .img__text_desc2,
 .img__text_desc3 {
   font-size: 30px;
-  line-height: 2;
+  line-height: var(--line-h-1-2);
   min-width: 250px;
-}
-
-.img__text_desc3 > .img__text_desc3_hidden {
-  color: var(--color-l);
-  text-transform: unset;
+  color: rgb(32, 28, 28);
 }
 
 @media (max-width: 1199px) {
@@ -180,7 +181,7 @@ p span {
 @media (max-width: 767px) {
   .about-us__inner,
   .about-us {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .about-us__inner p,

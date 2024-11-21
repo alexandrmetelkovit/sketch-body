@@ -4,15 +4,15 @@
 @import url("about-us.css");
 @import url("gallery.css");
 @import url("services.css");
+@import url("price-list.css");
 @import url("contacts.css");
 @import url("footer.css");
 
 :root {
-  --line-h-1-7: 1.7;
+  --line-h-1-2: 1.2;
   --opacity-0: 0;
   --color-l: #ffffff;
   --color-d: #000000;
-  --bgcolor: #b1aa9a;
   --margin-0: 0 auto;
 }
 
@@ -23,9 +23,11 @@ html {
 body {
   margin: var(--margin-0);
   max-width: 100%;
-  background-color: var(--bgcolor);
-  font-family: "EB Garamond", serif;
+  background-color: #b0a194;
+
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 /* помещаем содержимое бади в блок для того, чтобы бургер скрылся справа */
@@ -45,10 +47,9 @@ body {
   min-width: 1800px;
 }
 
-
 section {
   margin-bottom: 70px;
-  /* opacity: var(--opacity-0);
+  opacity: var(--opacity-0);
   -webkit-transform: translateY(50px);
   -ms-transform: translateY(50px);
   transform: translateY(50px);
@@ -56,7 +57,7 @@ section {
   transition: opacity 0.5s, -webkit-transform 0.5s;
   -o-transition: transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; */
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 button {

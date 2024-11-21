@@ -25,14 +25,13 @@
 
 .service__image h3 {
   font-size: 30px;
-  font-family: "Jost", sans-serif;
   font-weight: 500;
   margin: 0 0 0 10px;
 }
 
 .img {
-  -webkit-box-shadow: 0px 0px 49px 34px rgba(208, 184, 127, 0.45);
-  box-shadow: 0px 0px 49px 34px rgba(208, 184, 127, 0.45);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(208, 184, 127, 0.45);
+  box-shadow: 0px 0px 10px 3px rgba(208, 184, 127, 0.45);
 }
 
 .img,
@@ -66,7 +65,7 @@
 
 .service__price {
   position: absolute;
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   top: 30px;
   left: 30px;
   padding: 5px 22px;
@@ -93,7 +92,7 @@
 }
 
 .desc-action span {
-  color: #e00707df;
+  color: #631d1ddf;
   font-size: 30px;
 }
 
@@ -169,7 +168,7 @@
 
 @media (max-width: 1199px) {
   .services {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .services__subtitle {
@@ -234,7 +233,7 @@
   }
 
   .services {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .services__list {
