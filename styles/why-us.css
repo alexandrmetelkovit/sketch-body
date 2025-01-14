@@ -1,0 +1,238 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.why-us-inner {
+  padding: 1em;
+  font-family: "Arsenal SC", serif;
+  font-weight: 700;
+}
+
+.why-us-title {
+  text-align: center;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.why-us-wrapper {
+  background-image: url("../resources/gallery/section-about-us-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 65px 0 65px 0;
+}
+
+.why-us-column {
+  min-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.why-us-img-inner {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.why-us-img {
+  -webkit-box-shadow: 0 0 5px 2px gold;
+  box-shadow: 0 0 5px 2px gold;
+  max-width: 100%;
+}
+
+.why-us-text-inner {
+  max-width: 1100px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 90px;
+  padding: 1.2em;
+  background: rgba(98, 91, 91, 0.8);
+  -webkit-box-shadow: 0 0px 7px 5px #e9bd3a;
+  box-shadow: 0 0px 7px 5px #e9bd3a;
+}
+
+.why-us-text {
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.img-first-why-us-inner,
+.img-second-why-us-inner,
+.img-third-why-us-inner {
+  position: absolute;
+  top: 120px;
+  right: 6em;
+  max-width: 150px;
+}
+.img-second-why-us-inner {
+  left: 4em;
+}
+.img-third-why-us-inner {
+  right: 2em;
+}
+.img-first-why-us,
+.img-second-why-us,
+.img-third-why-us {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .why-us-inner {
+    padding: 0.8em;
+  }
+
+  .why-us-title {
+    font-size: 2em;
+  }
+
+  .why-us-wrapper {
+    padding: 20px 0;
+  }
+
+  .why-us-img-inner {
+    max-width: 450px;
+  }
+
+  .why-us-text-inner {
+    max-width: 930px;
+  }
+
+  .why-us-text {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+  .img-first-why-us-inner,
+  .img-second-why-us-inner,
+  .img-third-why-us-inner {
+    top: 90px;
+    right: 2em;
+  }
+  .img-first-why-us-inner {
+    max-width: 35px;
+  }
+  .img-second-why-us-inner {
+    left: 2em;
+    max-width: 80px;
+  }
+  .img-third-why-us-inner {
+    right: 1em;
+    max-width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us-title {
+    font-size: 1em;
+  }
+
+  .why-us-inner {
+    padding: 0.6em;
+  }
+  .why-us-wrapper {
+    padding: 20px 0;
+  }
+
+  .why-us-img-inner {
+    max-width: 240px;
+  }
+
+  .why-us-text-inner {
+    max-width: 600px;
+    padding: 0.5em;
+  }
+
+  .why-us-text {
+    font-size: 0.7em;
+    max-width: 100%;
+  }
+
+  .img-first-why-us-inner,
+  .img-second-why-us-inner,
+  .img-third-why-us-inner {
+    top: 65px;
+    right: 2em;
+  }
+  .img-first-why-us-inner {
+    max-width: 20px;
+  }
+  .img-second-why-us-inner {
+    left: 1em;
+    max-width: 50px;
+  }
+  .img-third-why-us-inner {
+    right: 0.5em;
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 450px) {
+  .why-us-title {
+    font-size: 0.8em;
+  }
+  .why-us-inner {
+    padding: 0.2em;
+  }
+  .why-us-img-inner {
+    max-width: 230px;
+  }
+  .why-us-text-inner {
+    max-width: 100%;
+    padding: 0.5em;
+  }
+
+  .why-us-text {
+    font-size: 0.52em;
+  }
+
+  .img-first-why-us-inner,
+  .img-second-why-us-inner,
+  .img-third-why-us-inner {
+    top: 65px;
+    right: 0.5em;
+  }
+  .img-first-why-us-inner {
+    max-width: 1.1em;
+  }
+  .img-second-why-us-inner {
+    left: 0.2em;
+    max-width: 2.2em;
+  }
+  .img-third-why-us-inner {
+    right: 0em;
+    max-width: 2.5em;
+  }
+}

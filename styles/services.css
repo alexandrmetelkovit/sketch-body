@@ -1,6 +1,6 @@
 .services__subtitle {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .span-subtitle {
@@ -19,35 +19,43 @@
 }
 
 .service__item {
-  position: relative;
   width: calc(50% - 5px);
 }
 
-.service__image h3 {
-  font-size: 30px;
-  font-weight: 500;
-  margin: 0 0 0 10px;
+.service__image {
+  position: relative;
+  max-width: 600px;
 }
-
+.service__price {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  top: 30px;
+  left: 30px;
+  padding: 5px 22px;
+  font-size: 1.3em;
+  background-color: #ad1818;
+  border-radius: 5px;
+  color: var(--color-l);
+}
+.service__video h3 {
+  font-family: "Braah One", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
 .img {
   -webkit-box-shadow: 0px 0px 10px 3px rgba(208, 184, 127, 0.45);
-  box-shadow: 0px 0px 10px 3px rgba(208, 184, 127, 0.45);
+  box-shadow: 0px 0px 50px 10px rgba(220, 178, 80, 0.45);
 }
-
 .img,
 .video {
   border-radius: 7px;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  cursor: pointer;
 }
-
 .service__video {
-  position: absolute;
-  top: 76px;
-  z-index: -1;
   width: 100%;
   padding: 0 7px;
   -webkit-transition: 0.2s;
@@ -55,45 +63,31 @@
   transition: 0.2s;
 }
 
-.service__item:hover .service__image {
-  z-index: -1;
-}
-
-.service__item:hover .service__video {
-  z-index: 1;
-}
-
-.service__price {
-  position: absolute;
-  font-family: "Open Sans", sans-serif;
-  top: 30px;
-  left: 30px;
-  padding: 5px 22px;
-  font-size: 22px;
-  line-height: 1.2;
-  background-color: #ad1818;
-  border-radius: 5px;
-  color: var(--color-l);
-}
-
 .action-text {
-  text-align: justify;
-  color: #090111;
-  margin-bottom: 50px;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: lowercase;
+  color: #4e4e4e;
+  margin-bottom: 1.2em;
+  font-family: "Coda", serif;
+  font-weight: 800;
 }
 
 .title-action {
-  font-size: 25px;
-  text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 .desc-action {
-  font-size: 25px;
+  font-size: 1em;
 }
 
-.desc-action span {
-  color: #631d1ddf;
-  font-size: 30px;
+.action-red-price {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: rgb(225, 0, 0);
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 .device-performance {
@@ -101,25 +95,28 @@
 }
 
 .device-performance h3 {
+  font-family: "Alegreya Sans SC", serif;
+  font-weight: 500;
   position: relative;
-  font-size: 20px;
-  line-height: 2;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .device-performance h3::after {
   content: "";
   display: block;
   position: absolute;
-  top: 26px;
-  right: 5px;
+  top: 105px;
+  right: 0px;
   width: 500px;
-  height: 500px;
+  height: 350px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .device-performance h3::after {
-  background-image: url("../resources/gallery/servicesBefore.svg");
+  background-image: url("../resources/gallery/body-services.svg");
 }
 
 @-webkit-keyframes pulse {
@@ -153,17 +150,33 @@
 }
 
 .device-performance p {
-  font-size: 18px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -o-linear-gradient(top, rgb(157, 26, 26), rgb(55, 9, 9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(157, 26, 26)),
+    to(rgb(55, 9, 9))
+  );
+  background-image: linear-gradient(180deg, rgb(157, 26, 26), rgb(55, 9, 9));
+
+  font-size: 1.2em;
   line-height: 2;
   -webkit-animation: pulse 12s infinite;
-  animation: pulse 12s infinite; /* Добавляем анимацию пульсации */
+  animation: pulse 12s infinite;
   -webkit-transition: transform 12s;
   -webkit-transition: -webkit-transform 12s;
   transition: -webkit-transform 12s;
   -o-transition: transform 12s;
   transition: transform 12s;
-  transition: transform 12s, -webkit-transform 12s; /* Время эффекта */
+  transition: transform 12s, -webkit-transform 12s;
   text-align: left;
+  text-transform: inherit;
 }
 
 @media (max-width: 1199px) {
@@ -172,18 +185,12 @@
   }
 
   .services__subtitle {
-    font-size: 23px;
+    font-size: 1.5em;
   }
 
-  .service__image h3 {
+  .service__video h3 {
     font-size: 25px;
     line-height: 1.5;
-  }
-
-  .img,
-  .video {
-    -webkit-box-shadow: 0px 0px 33px 34px rgba(208, 184, 127, 0.45);
-    box-shadow: 0px 0px 33px 34px rgba(208, 184, 127, 0.45);
   }
 
   .service__price {
@@ -195,37 +202,24 @@
     margin-bottom: 40px;
   }
 
-  .title-action,
-  .desc-action span {
-    font-size: 25px;
-  }
-
-  .desc-action {
-    font-size: 20px;
-  }
-
-  .device-performance h3 {
-    font-size: 20px;
-    line-height: 2;
-  }
-
   .device-performance h3::after {
-    top: 59px;
-    right: 150px;
-    width: 400px;
-    height: 400px;
+    top: 100px;
+    right: 80px;
+    width: 330px;
+    height: 405px;
   }
 
   .device-performance p {
-    font-size: 20px;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 767px) {
   .services__subtitle,
   .device-performance h3 {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1em;
+    margin-bottom: 1.2em;
+    text-align: justify;
   }
 
   .services__title::after {
@@ -237,24 +231,45 @@
   }
 
   .services__list {
-    row-gap: 30px;
-    margin-bottom: 30px;
+    gap: 30px;
   }
 
   .service__item {
     width: 100%;
   }
 
-  .service__image h3 {
-    margin-top: 10px;
-    font-size: 23px;
+  .service__video {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 7px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .video {
+    width: 100%;
+  }
+
+  .service__image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .service__video h3 {
+    font-size: 1.2em;
   }
 
   .service__price {
+    font-family: "Libre Franklin", serif;
+    font-weight: 400;
     padding: 6px 26px;
     left: 24px;
     top: 23px;
-    font-size: 14px;
+    font-size: 1em;
   }
 
   .action-text {
@@ -264,22 +279,13 @@
 
   .title-action,
   .desc-action span {
-    font-size: 25px;
+    font-size: 1em;
   }
 
   .desc-action {
-    font-size: 22px;
+    font-size: 0.8em;
   }
 
-  .device-performance h3::after {
-    top: 74px;
-    right: 1px;
-    width: 400px;
-    height: 400px;
-  }
-}
-
-@media (max-width: 630px) {
   .device-performance h3::after {
     display: none;
   }

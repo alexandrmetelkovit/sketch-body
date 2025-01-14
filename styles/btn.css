@@ -1,36 +1,53 @@
 .full-width-btn {
   display: block;
   width: 100%;
-  font-family: "Spectral SC", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   line-height: 153px;
   font-weight: 400;
   border-radius: 5px;
   border: none;
-  color: var(--color-l);
   text-align: center;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  background-color: #2122258e;
+  background-color: #f5f5dc;
   -webkit-transition: all 1.4s ease;
   -o-transition: all 1.4s ease;
   transition: all 1.4s ease;
 }
 
 .full-width-btn_inverted {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   line-height: 4;
-  border-radius: 60px;
+  border-radius: 25px;
+  background: #b1a896;
 }
 
-.wa-link {
+.full-width-btn_inverted-special {
+  max-width: 300px;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 2.1;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+.wa-link,
+.wa-link_special {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
   display: block;
-  color: var(--color-l);
+  color: rgb(255, 255, 255);
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.wa-link:hover {
+.wa-link:hover,
+.wa-link_special:hover {
+  opacity: 0.7;
   color: var(--color-d);
 }
 
@@ -48,12 +65,12 @@
 }
 
 .full-width-btn:hover,
-.full-width-btn_small:hover {
+.full-width-btn_small:hover,
+.full-width-btn_inverted-special:hover {
   opacity: 0.7;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background-color: #999597;
   color: var(--color-d);
 }
 
@@ -76,5 +93,12 @@
 
   .full-width-btn_small {
     line-height: 2.7;
+  }
+
+  .full-width-btn_inverted-special {
+    width: 100%;
+    font-size: 20px;
+    line-height: 2.1;
+    margin-top: 10px;
   }
 }

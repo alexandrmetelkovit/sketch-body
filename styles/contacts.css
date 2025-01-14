@@ -3,13 +3,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .contacts__title,
 .hours__title {
+  font-family: "Andika", serif;
+  font-weight: 700;
   margin-bottom: 74px;
-  font-size: 25px;
+  font-size: 1.5em;
   line-height: 1;
 }
 
@@ -22,7 +26,7 @@
 .contacts__instagram,
 .studio-hours,
 .address {
-  font-size: 30px;
+  font-size: 1.8em;
   text-decoration: none;
   color: var(--color-d);
   font-family: "Jost", sans-serif;
@@ -94,14 +98,6 @@
   .hours-address__inner {
     gap: 70px;
   }
-
-  .contacts__telephone,
-  .contacts__vk,
-  .contacts__inst,
-  .studio-hours,
-  .address {
-    font-size: 27px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -116,6 +112,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 58px;
+    width: 100%;
   }
 
   .hours-address__inner {
@@ -127,12 +124,15 @@
     line-height: 2.5;
     color: var(--color-d);
   }
+
   .contacts__telephone,
   .contacts__vk,
+  .contacts__vkontakte,
+  .contacts__instagram,
   .contacts__inst,
   .studio-hours,
   .address {
-    font-size: 30px;
+    font-size: 1.25em;
     line-height: var(--line-h-1-7);
   }
 }
