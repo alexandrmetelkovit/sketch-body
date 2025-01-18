@@ -3,7 +3,8 @@
   top: 0;
   overflow: hidden;
   opacity: 0.8;
-  background-color: rgb(150, 142, 117);
+  background-color: #ece9de;
+
   z-index: 2;
 }
 
@@ -136,7 +137,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #999597;
+    background-color: rgb(197, 186, 152);
+
     z-index: 2;
     width: 100%;
     text-align: center;

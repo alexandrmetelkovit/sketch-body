@@ -214,7 +214,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .services__subtitle,
   .device-performance h3 {
     font-size: 1em;
