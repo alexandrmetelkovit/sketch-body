@@ -65,9 +65,8 @@
 
 .action-text {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 200;
   text-align: center;
-  text-transform: lowercase;
   color: #4e4e4e;
   margin-bottom: 1.2em;
   font-family: "Coda", serif;
@@ -76,6 +75,7 @@
 
 .title-action {
   font-size: 1.3em;
+  font-family: "Dancing Script", serif;
 }
 
 .desc-action {
@@ -94,8 +94,12 @@
   margin-bottom: 40px;
 }
 
+.action-goodbye {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
 .device-performance h3 {
-  font-family: "Alegreya Sans SC", serif;
   font-weight: 500;
   position: relative;
   font-size: 1.5em;
@@ -109,7 +113,7 @@
   position: absolute;
   top: 105px;
   right: 0px;
-  width: 500px;
+  width: 430px;
   height: 350px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -179,7 +183,7 @@
   text-transform: inherit;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .services {
     margin-bottom: 70px;
   }
@@ -203,10 +207,9 @@
   }
 
   .device-performance h3::after {
-    top: 100px;
-    right: 80px;
-    width: 330px;
-    height: 405px;
+    top: 120px;
+    right: 90px;
+    width: 260px;
   }
 
   .device-performance p {
@@ -286,7 +289,48 @@
     font-size: 0.8em;
   }
 
-  .device-performance h3::after {
+  /* .device-performance h3::after {
     display: none;
+  } */
+
+  .device-performance h3::after {
+    top: 90px;
+    right: 80px;
+    width: 230px;
+  }
+  .device-performance p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 600px) {
+  .device-performance h3::after {
+    top: 90px;
+    right: 40px;
+    width: 190px;
+  }
+  .device-performance p {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 450px) {
+  .device-performance h3::after {
+    top: 120px;
+    right: 5px;
+    width: 170px;
+  }
+  .device-performance p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 375px) {
+  .device-performance h3::after {
+    top: 120px;
+    right: 0px;
+    width: 190px;
+    opacity: 0.5;
+  }
+  .device-performance p {
+    font-size: 0.8em;
   }
 }
